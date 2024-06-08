@@ -1,0 +1,135 @@
+.header {
+  padding-top: 30px;
+  height: 500px;
+}
+.header .container {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.header .container .image .ant-image .ant-image-mask:hover {
+  border-radius: 50%;
+}
+
+.header .container .image .img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header .container .image .img .status {
+  margin: 10px;
+}
+
+.header .container .image .img .status .ant-tag {
+  border: 2px solid;
+  padding: 5px;
+}
+
+.header .container .image .img .status > span {
+  font-size: 16px;
+}
+
+.header .container .image .avt {
+  width: 300px;
+  border-radius: 50%;
+  filter: grayscale(50%);
+}
+
+.header .container .image .blank {
+  width: 130px;
+  height: 10px;
+  position: absolute;
+  z-index: 999;
+  top: 70px;
+  left: 40px;
+  background: #000;
+}
+
+.header .container .content-header {
+  color: #000;
+  margin-top: 15px;
+}
+
+.header .container .content-header h1 {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 12px;
+}
+
+.header .container .content-header h4 {
+  font-size: 12px;
+  padding-top: 10px;
+  text-decoration: underline;
+  text-align: center;
+  letter-spacing: 6px;
+}
+
+.header .container .content-header .blank {
+  width: 130px;
+  height: 10px;
+  position: absolute;
+  z-index: 999;
+  bottom: 500px;
+  right: 40px;
+  background: #000;
+}
+
+@media only screen and (min-width: 767px) {
+  .header {
+    height: 600px;
+  }
+  .header .container {
+    display: flex !important;
+    align-items: center !important;
+  }
+  .header .container .content-header h1 {
+    font-size: 40px !important;
+  }
+  .header .container .content-header h4 {
+    font-size: 18px !important;
+  }
+  .header .container .image .avt {
+    width: 400px !important;
+  }
+  .header .container .image .blank {
+    height: 15px;
+    top: 90px;
+    left: 160px;
+  }
+  .header .container .content-header .blank {
+    width: 200px;
+    bottom: 350px;
+  }
+}
+
+@media only screen and (min-width: 1023px) {
+  .header .container {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .header .container .content-header {
+    border-style: outset;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    padding: 50px;
+  }
+  .header .container .content-header h1 {
+    font-size: 70px !important;
+  }
+  .header .container .image .avt {
+    width: 500px !important;
+  }
+  .header .container .image .blank {
+    left: 10px;
+  }
+  .header .container .image .img .status > span {
+    font-size: 20px;
+  }
+  .header .container .content-header .blank {
+    width: 300px;
+    bottom: 455px;
+  }
+}
